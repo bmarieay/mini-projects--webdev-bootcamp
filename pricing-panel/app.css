@@ -40,7 +40,7 @@ a{
 }
 
 img{
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .panel{
@@ -48,8 +48,8 @@ img{
     padding-bottom: 5%;
     border-radius: 10px;
     background-color: #FFF;
-    max-width: 1020px;
-    /* margin: 0 auto; */
+    max-width: 1000px;
+    min-height: 80vmin;
 }
 
 .pricing-table{
@@ -112,7 +112,7 @@ img{
     color: var(--primary-clr);
 }
 
-@media (min-width: 750px){
+@media (min-width: 900px){
     body{
         display: flex;
         justify-content: center;
@@ -131,7 +131,7 @@ img{
     }
 
     .pricing-plan{
-        padding: 0 5rem 2.5rem 5rem;
+        padding: 2.5rem 5rem 2.5rem 5rem;
         flex-basis: 30%;
     }
 
