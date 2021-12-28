@@ -31,6 +31,7 @@ body{
     font-weight: var(--f-regular);
     letter-spacing: .1em;
     background-color: var(--background-clr);
+    line-height: 1.6;
 }
 
 a{
@@ -39,7 +40,7 @@ a{
 }
 
 img{
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .panel{
@@ -47,10 +48,13 @@ img{
     padding-bottom: 5%;
     border-radius: 10px;
     background-color: #FFF;
+    max-width: 1020px;
+    /* margin: 0 auto; */
 }
 
 .pricing-table{
     margin: 0 5%;
+    /* border: 2px solid black; */
 }
 
 .pricing-header{
@@ -65,7 +69,7 @@ img{
 .pricing-price{
     font-size: var(--fs-big);
     font-weight: var(--f-thick);
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     display: block;
 }
 
@@ -75,17 +79,15 @@ img{
 }
 
 .pricing-features-item{
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     border-top: 1px solid var(--secondary-clr);
-
-    /* border-bottom: 1px solid var(--primary-clr); */
 }
 
 .pricing-button{
     display: block;
     font-weight: var(--f-thin);
     border: 1px solid var(--primary-clr);
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 3rem;
     font-size: var(--fs-regular);
     width: max-content;
     margin: 2.5rem auto 2.5rem;
@@ -101,5 +103,39 @@ img{
     -moz-box-shadow: 2px 4px 5px 2px var(--accent-clr);
 }
 
+.is-featured{
+    background-color: var(--primary-clr);
+    color: #FFF;
+}
 
+.is-featured:hover{
+    color: var(--primary-clr);
+}
 
+@media (min-width: 750px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .panel{
+        padding: 0;
+    }
+
+    .pricing-table{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .pricing-plan{
+        padding: 0 5rem 2.5rem 5rem;
+        flex-basis: 30%;
+    }
+
+    .pricing-plan + .pricing-plan{
+        border-left: 1px solid var(--secondary-clr);
+    }
+}
